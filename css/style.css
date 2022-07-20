@@ -147,6 +147,8 @@ p {
 /* Герой */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   /* margin-bottom: 94px; */
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url(../images/bg.svg) center;
@@ -157,7 +159,7 @@ p {
   text-align: center;
 }
 .hero-title {
-  padding-top: 200px;
+  /* padding-top: 200px; */
   padding-bottom: 30px;
 
   font-weight: 900;
@@ -171,7 +173,7 @@ p {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 
   font-family: "Roboto", sans-serif;
   min-width: 200px;
@@ -232,11 +234,20 @@ p {
 .features-list .features-list-item + .features-list-item {
   margin-left: 30px;
 }
+.features-fig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
 
 .icon-features {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 /* Чем мы занимаемся*/
 
@@ -368,16 +379,18 @@ p {
   margin-right: auto;
   margin-bottom: 94px;
 }
-.clients-item {
+.clients-item a {
   padding: 16px 32px;
+}
+.clients-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-/* .clients-link:hover,
-.clients-link:focus {
-  fill: #2196F3;
-  border: 1px solid #2196F3;
-} */
+
 .clients-item:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
@@ -385,13 +398,14 @@ p {
 .clients-item:hover svg {
   fill: #2196f3;
 }
-.clients-item:focus {
+.clients-item a:focus svg {
+  fill: #2196f3;
+}
+.clients-item a:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
-.clients-item:focus svg {
-  fill: #2196f3;
-}
+
 .clients-list .clients-item + .clients-item {
   margin-left: 30px;
 }
@@ -554,9 +568,6 @@ footer h2 {
 }
 .works-item:hover,
 .border:focus {
-  background: #ffffff;
-  cursor: pointer;
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
